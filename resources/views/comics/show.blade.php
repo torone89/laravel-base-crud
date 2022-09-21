@@ -69,62 +69,46 @@
                 </div>
             </div>
         </div>
-        </div>
+
 
 
         <section id="bg-gray">
-            <div class="medium-container py-5">
 
-                <div class="row justify-content-between">
-                    <div class="col-5">
-                        <div class="row border-bottom">
-                            <h3 class="mb-3">Talent</h3>
+            <div class="container">
+                <div class="col-5">
+                    <div class="row border-bottom">
+                        <h3 class="my-3">Specs</h3>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-5  m-0">
+                            <nav class="text-bottom"> Series:</nav>
                         </div>
-
-                        <div class="col-9">
+                        <div class="col-7 d-flex align-items-center">
+                            <nav class="text-bottom-blue text-uppercase ">{{ $comic['series'] }}</nav>
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-5  m-0">
+                            <nav class="text-bottom"> U.S. Price:</nav>
+                        </div>
+                        <div class="col-7">
+                            {{ $comic['price'] }}
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-5  m-0">
+                            <nav class="text-bottom"> Sale Date:</nav>
+                        </div>
+                        <div class="col-7">
+                            {{ $comic['sale_date'] }}
 
                         </div>
                     </div>
-
-                    <div class="col-9">
-
-                    </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="row border-bottom">
-                    <h3 class="mb-3">Specs</h3>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-5  p-0 m-0">
-                        <nav class="text-bottom"> Series:</nav>
-                    </div>
-                    <div class="col-7 d-flex align-items-center">
-                        <nav class="text-bottom-blue text-uppercase ">{{ $comic['series'] }}</nav>
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-5  p-0 m-0">
-                        <nav class="text-bottom"> U.S. Price:</nav>
-                    </div>
-                    <div class="col-7">
-                        {{ $comic['price'] }}
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-5  p-0 m-0">
-                        <nav class="text-bottom"> Sale Date:</nav>
-                    </div>
-                    <div class="col-7">
-                        {{ $comic['sale_date'] }}
 
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="container-fluid border-top">
+            <div class="container-fluid border-top mt-5">
                 <div class="container">
                     <section id='shop-comic'>
                         <ul class="row text-secondary fw-bold m-0 p-0">

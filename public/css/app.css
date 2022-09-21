@@ -3,46 +3,6 @@
   color: gray;
 }
 
-header {
-  margin: 10px;
-}
-
-nav .menu-header {
-  display: flex;
-}
-
-figure .menu-header {
-  display: inline-block;
-}
-figure .menu-header img {
-  padding: 20px 0px;
-}
-
-.menu-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  margin-left: 10px;
-}
-.menu-header li {
-  font-weight: bold;
-  padding: 0 15px;
-  height: 100%;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.menu-header li:hover {
-  color: #1e86ed;
-  border-bottom: 5px solid #1e86ed;
-}
-
-a .menu-header {
-  color: #484646;
-}
-
 .shop {
   background-color: #1e86ed;
   padding: 50px 0;
@@ -118,45 +78,6 @@ a .menu-header {
   font-size: 20px;
   margin: 15px 10px;
   cursor: pointer;
-}
-
-footer {
-  background-image: url("../images/footer-bg.jpg");
-  background-size: cover;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-left {
-  display: flex;
-  padding: 40px 0;
-}
-
-footer li {
-  margin-right: 30px;
-  line-height: 30px;
-}
-
-h3, .h3 {
-  text-transform: uppercase;
-  font-size: 19px;
-  color: #fdf0ff;
-}
-
-a {
-  text-decoration: none;
-  color: grey;
-}
-
-.nav-right {
-  max-height: 450px;
-  overflow: hidden;
-}
-.nav-right img {
-  margin-top: -50px;
 }
 
 .jumbo {
@@ -11203,6 +11124,84 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  padding: 40px 0;
+}
+
+footer li {
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+h3, .h3 {
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #fdf0ff;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-right {
+  max-height: 450px;
+  overflow: hidden;
+}
+.nav-right img {
+  margin-top: -50px;
+}
+
+header {
+  margin: 10px;
+}
+
+nav .menu-header {
+  display: flex;
+}
+
+figure .menu-header {
+  display: inline-block;
+}
+figure .menu-header img {
+  padding: 20px 0px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 10px;
+}
+.menu-header li {
+  font-weight: bold;
+  padding: 0 15px;
+  height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu-header li:hover {
+  color: #1e86ed;
+  border-bottom: 5px solid #1e86ed;
+}
+
+a {
+  color: #484646;
+}
+
 /* GENERICS */
 * {
   margin: 0;

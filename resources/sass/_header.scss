@@ -1,40 +1,42 @@
 // HEADER
 
-header {margin: 10px;}
-nav .menu-header{
-  display: flex;
+header {
+    margin: 10px;
+}
+nav .menu-header {
+    display: flex;
 }
 
-figure .menu-header{
-  display: inline-block;
+figure .menu-header {
+    display: inline-block;
 
-  img {
-    padding: 20px 0px;
-  }
+    img {
+        padding: 20px 0px;
+    }
 }
 
 .menu-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  margin-left: 10px;
-
-  li {
-    font-weight: bold;
-    padding: 0 15px;
-    height: 100%;
-    text-transform: uppercase;
-    cursor: pointer;
     display: flex;
+
     align-items: center;
-    &:hover {
-      color: $blue-color;
-      border-bottom: 5px solid $blue-color;
+    width: 100%;
+    margin-left: 10px;
+
+    li {
+        font-weight: bold;
+        padding: 0 15px;
+        height: 100%;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: $blue-color;
+            border-bottom: 5px solid $blue-color;
+        }
     }
-  }
 }
 
-a .menu-header {
-  color: $strongGray-color;
+a {
+    color: $strongGray-color;
 }
