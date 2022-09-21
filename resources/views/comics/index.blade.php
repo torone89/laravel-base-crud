@@ -4,6 +4,9 @@
 
 @section('main-content')
     <!-- LOgica Card -->
+    <div>
+        <a href="{{ route('comics.create') }}" class="btn btn-success">Crea Card</a>
+    </div>
     <div class="cards-box">
         <!-- COMPONENTE CARD + LOGICA CREAZIONE CARD -->
         @foreach ($comics as $comic)

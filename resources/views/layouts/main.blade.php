@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script defer src="{{ asset('js/app.js') }}"></script>
 
-    @yield('title')<title>Comics</title>
+
 </head>
 
 <body>
     @include('includes.header')
 
-    prova
-    prova
-    orova
+
 
     </s>
     <main class="mt-3">

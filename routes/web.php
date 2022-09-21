@@ -19,9 +19,12 @@ Route::get('/', 'HomeController@index');
 
 
 // CRUD ROUTES FOR COMIC CONTROLL
-Route::get('/comics', 'ComicController@index')->name('comics.index');
-Route::get('/comics/{comic}', 'ComicController@show')->name('comics.show');
-Route::get('/comics/create', 'ComicController@create')->name('comics.create');
+// Route::get('/comics', 'ComicController@index')->name('comics.index');
+// Route::get('/comics/{comic}', 'ComicController@show')->name('comics.show');
+// Route::get('/comics/create', 'ComicController@create')->name('comics.create');
 // Route::get('/comics/store', 'ComicController@store')->name('comics.store');
 
-// Route::get('comics', 'ComicController');
+Route::resource('comics', 'ComicController');
+Route::get('/create', function () {
+    return view('comics.create');
+});
