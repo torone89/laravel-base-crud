@@ -4,6 +4,8 @@
 
 @section('main-content')
 
+
+    ciao
     <section id="comic-page">
 
         {{-- BARRA SFONDO BLU --}}
@@ -78,65 +80,48 @@
                         <div class="row border-bottom">
                             <h3 class="mb-3">Talent</h3>
                         </div>
-                        <div class="row border-bottom">
-                            <div class="col-12  p-0 m-0 ">
-                                <nav class="fw-bold text-bottom"> Art by: </nav>
-                                @foreach ($comic['artists'] as $artist)
-                                    <a class="text-bottom-blue" href="#">
-                                        {{ $artist }} {{ !$loop->last ? ',' : '' }}
-                                    </a>
-                                @endforeach
 
-                            </div>
-                            <div class="col-9">
+                        <div class="col-9">
 
-                            </div>
-                        </div>
-                        <div class="row border-bottom">
-                            <div class="col-12 p-0 m-0">
-                                <nav class="fw-bold text-bottom">Written by:</nav>
-                                @foreach ($comic['writers'] as $writer)
-                                    <a class="text-bottom-blue" href="#">
-                                        {{ $writer }} {{ !$loop->last ? ',' : '' }}
-                                    </a>
-                                @endforeach
-                            </div>
-                            <div class="col-9">
-
-                            </div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="row border-bottom">
-                            <h3 class="mb-3">Specs</h3>
-                        </div>
-                        <div class="row border-bottom">
-                            <div class="col-5  p-0 m-0">
-                                <nav class="text-bottom"> Series:</nav>
-                            </div>
-                            <div class="col-7 d-flex align-items-center">
-                                <nav class="text-bottom-blue text-uppercase ">{{ $comic['series'] }}</nav>
-                            </div>
-                        </div>
-                        <div class="row border-bottom">
-                            <div class="col-5  p-0 m-0">
-                                <nav class="text-bottom"> U.S. Price:</nav>
-                            </div>
-                            <div class="col-7">
-                                {{ $comic['price'] }}
-                            </div>
-                        </div>
-                        <div class="row border-bottom">
-                            <div class="col-5  p-0 m-0">
-                                <nav class="text-bottom"> Sale Date:</nav>
-                            </div>
-                            <div class="col-7">
-                                {{ $comic['sale_date'] }}
 
-                            </div>
-                        </div>
+                    <div class="col-9">
+
                     </div>
                 </div>
+            </div>
+            <div class="col-5">
+                <div class="row border-bottom">
+                    <h3 class="mb-3">Specs</h3>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-5  p-0 m-0">
+                        <nav class="text-bottom"> Series:</nav>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                        <nav class="text-bottom-blue text-uppercase ">{{ $comic['series'] }}</nav>
+                    </div>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-5  p-0 m-0">
+                        <nav class="text-bottom"> U.S. Price:</nav>
+                    </div>
+                    <div class="col-7">
+                        {{ $comic['price'] }}
+                    </div>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-5  p-0 m-0">
+                        <nav class="text-bottom"> Sale Date:</nav>
+                    </div>
+                    <div class="col-7">
+                        {{ $comic['sale_date'] }}
+
+                    </div>
+                </div>
+            </div>
+            </div>
             </div>
 
             <div class="container-fluid border-top">
