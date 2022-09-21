@@ -5,11 +5,12 @@
 @section('main-content')
     <!-- LOgica Card -->
     <div class="cards-box">
+
+        porco dio
         <!-- COMPONENTE CARD + LOGICA CREAZIONE CARD -->
         @foreach ($comics as $comic)
             <div class="cards">
-                <a href="{{ route('products.comic', ['id' => $loop->index]) }}"> <img src="{{ $comic['thumb'] }}"
-                        alt=""></a>
+                {{-- <a href="{{ route('comics.show', [$comic->id]) }}"> <img src="{{ $comic['thumb'] }}" alt=""></a> --}}
                 <h3>{{ $comic['title'] }}</h3>
                 <h6>{{ $comic['series'] }}</h6>
                 <p>{{ $comic['price'] }}</p>
