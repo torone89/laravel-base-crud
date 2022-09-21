@@ -1,6 +1,9 @@
-@section('tile', 'Home')
+@section('title', 'Home')
 
-@extends('main')
+@extends('layouts.main')
 
 @section('main-content')
+
+    aaaaaa
+    diuoaopaaoaoa
 @endsection

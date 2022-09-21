@@ -1,6 +1,6 @@
-@section('tile', 'Comic')
+@section('title', 'Comic')
 
-@extends('main')
+@extends('layouts.main')
 
 @section('main-content')
 @endsection
