@@ -1,0 +1,106 @@
+#comic-page {
+    .blue-bg {
+        height: 80px;
+        width: 100%;
+        background-color: $blue-color;
+    }
+
+    .thumb {
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .label {
+            position: absolute;
+            background-color: $blue-comic;
+            text-align: center;
+            text-transform: uppercase;
+            color: $lightVhite-color;
+            font-size: 0.4rem;
+
+            &#comic-book {
+                bottom: 304px;
+                width: 90px;
+            }
+
+            &#view-gallery {
+                bottom: 25px;
+                width: 192px;
+            }
+        }
+    }
+
+    h1 {
+        margin: 70px 0 40px;
+        text-transform: uppercase;
+
+        color: #003f5e;
+    }
+    .price-and-info {
+        background-color: #55ba59;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-bottom: 1px solid black;
+    }
+    .price {
+        padding-right: 220px;
+        color: white;
+        span {
+            color: #a8f98e;
+        }
+    }
+
+    #available {
+        padding: 90px 10px;
+        text-transform: uppercase;
+        color: #a8f98e;
+    }
+
+    .description {
+        margin-top: 30px;
+        color: #003f5e;
+        font-size: 14px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .advert {
+        text-align: right;
+        font-weight: 600px;
+        font-size: 17px;
+        color: gray;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+}
+
+#bg-gray {
+    background-color: #f6f6f6;
+
+    h3 {
+        color: #003f5e;
+    }
+}
+
+.text-bottom {
+    color: #003f5e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#check {
+    border-left: 1px solid #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.text-bottom-blue {
+    color: $blue-comic;
+    font-weight: bolder;
+    font-size: 13px;
+}

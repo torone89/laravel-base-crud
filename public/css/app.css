@@ -1,4 +1,352 @@
 @charset "UTF-8";
+.text-gray {
+  color: gray;
+}
+
+header {
+  margin: 10px;
+}
+
+nav .menu-header {
+  display: flex;
+}
+
+figure .menu-header {
+  display: inline-block;
+}
+figure .menu-header img {
+  padding: 20px 0px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-left: 10px;
+}
+.menu-header li {
+  font-weight: bold;
+  padding: 0 15px;
+  height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu-header li:hover {
+  color: #1e86ed;
+  border-bottom: 5px solid #1e86ed;
+}
+
+a .menu-header {
+  color: #484646;
+}
+
+.shop {
+  background-color: #1e86ed;
+  padding: 50px 0;
+}
+
+.shop ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+.shop ul li {
+  display: flex;
+  align-items: center;
+  color: #fdf0ff;
+  cursor: pointer;
+}
+.shop ul li img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.social-bg {
+  background-color: #484646;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-up {
+  margin-left: 5px;
+}
+
+.social-bg button {
+  border: none;
+  border: 2px solid #1e86ed;
+  padding: 17px;
+  background-color: #484646;
+}
+
+.social-bg a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fdf0ff;
+  font-size: 15px;
+}
+
+.social-bg img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.social-bg img:hover {
+  background-color: #fdf0ff;
+  border-radius: 50px 50px;
+}
+
+/* SPAN FOLLOW */
+.social-bg .follow {
+  text-transform: uppercase;
+  color: #1e86ed;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  padding: 40px 0;
+}
+
+footer li {
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+h3, .h3 {
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #fdf0ff;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-right {
+  max-height: 450px;
+  overflow: hidden;
+}
+.nav-right img {
+  margin-top: -50px;
+}
+
+.jumbo {
+  height: 400px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+}
+
+#comic-page .blue-bg {
+  height: 80px;
+  width: 100%;
+  background-color: #1e86ed;
+}
+#comic-page .thumb {
+  position: relative;
+}
+#comic-page .thumb img {
+  position: absolute;
+  bottom: 25px;
+}
+#comic-page .thumb .label {
+  position: absolute;
+  background-color: #00a8d7;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fdf0ff;
+  font-size: 0.4rem;
+}
+#comic-page .thumb .label#comic-book {
+  bottom: 304px;
+  width: 90px;
+}
+#comic-page .thumb .label#view-gallery {
+  bottom: 25px;
+  width: 192px;
+}
+#comic-page h1, #comic-page .h1 {
+  margin: 70px 0 40px;
+  text-transform: uppercase;
+  color: #003f5e;
+}
+#comic-page .price-and-info {
+  background-color: #55ba59;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+#comic-page .price {
+  padding-right: 220px;
+  color: white;
+}
+#comic-page .price span {
+  color: #a8f98e;
+}
+#comic-page #available {
+  padding: 90px 10px;
+  text-transform: uppercase;
+  color: #a8f98e;
+}
+#comic-page .description {
+  margin-top: 30px;
+  color: #003f5e;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#comic-page .advert {
+  text-align: right;
+  font-weight: 600px;
+  font-size: 17px;
+  color: gray;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+#bg-gray {
+  background-color: #f6f6f6;
+}
+#bg-gray h3, #bg-gray .h3 {
+  color: #003f5e;
+}
+
+.text-bottom {
+  color: #003f5e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#check {
+  border-left: 1px solid #000000;
+  padding: 10px 20px;
+  color: white;
+}
+
+.text-bottom-blue {
+  color: #00a8d7;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.card-section {
+  background-color: #1b1b1b;
+}
+.card-section h6, .card-section .h6, .card-section p {
+  color: gray;
+}
+
+.cards-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.container-card {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button-series {
+  position: absolute;
+  left: -10px;
+  top: -25px;
+  width: 300px;
+  padding: 5px 5px;
+  font-size: 18px;
+}
+.button-series button {
+  background-color: #1e86ed;
+  padding: 10px 14px;
+  margin: 0 auto;
+  color: #fdf0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button-series button:hover {
+  background-color: #fdf0ff;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-load {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.button-load button {
+  background-color: #1e86ed;
+  padding: 15px 50px;
+  margin: 0 auto;
+  color: #fdf0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button-load button:hover {
+  background-color: #fdf0ff;
+  color: black;
+  border: 1px solid black;
+}
+
+.cards {
+  margin-top: 30px;
+  flex-basis: calc(16.6666666667% - 20px);
+  padding: 5px;
+}
+.cards img {
+  width: 1500px;
+  height: 150px;
+  cursor: pointer;
+}
+.cards img:hover {
+  transition: 0, 3s;
+  transform: scale(1);
+  opacity: 50%;
+}
+.cards h3, .cards .h3 {
+  margin-top: 5px;
+  color: #fdf0ff;
+  font-size: 15px;
+}
+
 /*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10854,4 +11202,43 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+/* GENERICS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UTILS */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.medium-container {
+  width: 80%;
+  margin: 0 auto;
 }

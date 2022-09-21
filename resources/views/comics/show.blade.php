@@ -5,7 +5,7 @@
 @section('main-content')
 
 
-    ciao
+
     <section id="comic-page">
 
         {{-- BARRA SFONDO BLU --}}
