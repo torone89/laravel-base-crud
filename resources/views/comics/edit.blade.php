@@ -1,9 +1,9 @@
 @extends('layouts.main')
-@section('title', 'Crea Nuovo Comic')
+@section('title', 'Edit Comic')
 
 @section('main-content')
-    <form action="{{ route('comics.store') }}" method="POST">
-        @csrf
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
+        @csrf @method('PUT')
 
         <div class="container-card">
             <!-- BUTTON CURRENT SERIES -->
@@ -12,22 +12,27 @@
             <h1 class='my-4'> Aggiungi un nuovo Comic </h1>
             <div class="row">
                 <div class="col-4 p-2">
-                    <input type="text" class="form-control" placeholder="Title" name="title">
+                    <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $comic->title }}">
                 </div>
                 <div class="col-4 p-2">
-                    <input type="text" class="form-control" placeholder="Type" name="type">
+                    <input type="text" class="form-control" placeholder="Type" name="type"
+                        value="{{ $comic->type }}">
                 </div>
                 <div class="col-4 p-2">
-                    <input type="text" class="form-control" placeholder="Thumb" name="thumb">
+                    <input type="text" class="form-control" placeholder="Thumb" name="thumb"
+                        value="{{ $comic->thumb }}">
                 </div>
                 <div class="col-4 p-2">
-                    <input type="text" class="form-control" placeholder="Price" name="price">
+                    <input type="text" class="form-control" placeholder="Price" name="price"
+                        value="{{ $comic->price }}">
                 </div>
                 <div class="col-4 p-2">
-                    <input type="text" class="form-control" placeholder="Series" name="series">
+                    <input type="text" class="form-control" placeholder="Series" name="series"
+                        value="{{ $comic->series }}">
                 </div>
                 <div class="col-4 p-2 ">
-                    <input type="text" class="form-control" placeholder="Sale Date" name="sale_date">
+                    <input type="text" class="form-control" placeholder="Sale Date" name="sale_date"
+                        value="{{ $comic->sale_date }}">
                 </div>
                 <div class="col-12 p-2">
                     <textarea rows='5' class="form-control" placeholder="Description" name="description"></textarea>

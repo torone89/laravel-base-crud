@@ -140,9 +140,20 @@
 
 
                     </section>
-                    <div class="py-4 mt-3"> <a class="btn btn-primary" href="{{ url('/comics') }}">Torna ai comics </a>
-                    </div>
 
+                    <div class="d-flex justify-content-between align-itmes-center">
+                        <div class="py-4 mt-3"> <a class="btn btn-primary" href="{{ url('/comics') }}">Torna ai comics </a>
+                        </div>
+
+
+                        <div class="py-4 mt-3">
+                            <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">Edita</a>
+
+
+
+                            <button type="submit" class="btn btn-danger" value="reset">Elimina</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 

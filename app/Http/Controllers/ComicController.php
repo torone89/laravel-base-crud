@@ -69,7 +69,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
@@ -81,7 +81,14 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+
+        //RIEMPO GLI ATTRIBUTI
+        $comic->fill($data);
+        //SALVO
+        $comic->save();
+
+        return redirect()->route('comics.index');
     }
 
     /**
