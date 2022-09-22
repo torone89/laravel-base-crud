@@ -145,16 +145,24 @@
                         <div class="py-4 mt-3"> <a class="btn btn-primary" href="{{ url('/comics') }}">Torna ai comics </a>
                         </div>
 
+                        <div class="py-4 mt-3 d-flex">
 
-                        <div class="py-4 mt-3">
+                            {{-- BUTTON EDIT --}}
+
                             <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">Edita</a>
 
 
+                            {{-- BUTTON DELETE --}}
 
-                            <button type="submit" class="btn btn-danger" value="reset">Elimina</button>
+                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="subimit" class="btn btn-danger">Cancella</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
 
