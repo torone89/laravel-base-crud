@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 // ROTTA HOME
 Route::get('/', 'HomeController@index');
 
+// ROTTA CONTROLLI COMIC
+Route::resource('comics', 'ComicController');
 
 
 // CRUD ROUTES FOR COMIC CONTROLL
@@ -24,7 +26,6 @@ Route::get('/', 'HomeController@index');
 // Route::get('/comics/create', 'ComicController@create')->name('comics.create');
 // Route::get('/comics/store', 'ComicController@store')->name('comics.store');
 
-Route::resource('comics', 'ComicController');
-Route::get('/create', function () {
-    return view('comics.create');
-});
+// Route::get('/create', function () {
+//     return view('comics.create');
+// });

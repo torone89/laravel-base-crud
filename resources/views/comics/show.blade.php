@@ -31,8 +31,8 @@
 
 
 
-            <div class="row">
-                <div class="col-8 m-0 p-0">
+            <div class="row justify-content-between">
+                <div class="col-7 m-0 p-0">
                     {{-- current series title --}}
                     <h1 class="ml-0">{{ $comic['title'] }}</h1>
                     <div class="price-and-info">
@@ -65,7 +65,7 @@
                         advertisement
                     </div>
 
-                    <img class="img-fluid pl-5" src="{{ asset('../images/adv.jpg') }}" alt="apply now">
+                    <img class="img-fluid" src="{{ asset('../images/adv.jpg') }}" alt="apply now">
                 </div>
             </div>
         </div>
@@ -137,9 +137,16 @@
 
                             </li>
                         </ul>
+
+
                     </section>
+                    <div class="py-4 mt-3"> <a class="btn btn-primary" href="{{ url('/comics') }}">Torna ai comics </a>
+                    </div>
+
                 </div>
             </div>
+
+
 
         </section>
 

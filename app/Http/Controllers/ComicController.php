@@ -40,9 +40,13 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+        // CREO NUOVA ISTANZA
         $comic = new Comic();
+        //RIEMPO GLI ATTRIBUTI
         $comic->fill($data);
+        //SALVO
         $comic->save();
+
         return redirect()->route('comics.index');
     }
 

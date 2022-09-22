@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'Crea Nuovo Comic')
 
 @section('main-content')
     <form action="{{ route('comics.store') }}" method="POST">
@@ -29,7 +30,7 @@
                     <input type="text" class="form-control" placeholder="Sale Date" name="sale_date">
                 </div>
                 <div class="col-12 p-2">
-                    <input type="text" class="form-control" placeholder="Description" name="description">
+                    <textarea rows='5' class="form-control" placeholder="Description" name="description"></textarea>
                 </div>
 
                 <div class="d-flex justify-content-between align-itmes-center">

@@ -10,8 +10,8 @@
                 <button>Current series</button>
             </div>
 
-            <div class=row>
-                <div class="offset-11 col-2 mt-5">
+            <div class="d-flex justify-content-end">
+                <div class="mt-5">
                     <a href="{{ route('comics.create') }}" class="btn btn-success">Crea Comic</a>
                 </div>
             </div>
