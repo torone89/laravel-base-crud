@@ -97,13 +97,13 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($comic)
     {
 
-        $comic = Comic::findOrFail($id);
+        $comic = Comic::findOrFail($comic);
 
         $comic->delete();
-
-        return redirect()->route('comics.index');
+        //Variabili di sessione ->with('deleted', "")
+        return redirect()->route('comics.index')->with('deleted', "e eliminato con successo!");
     }
 }

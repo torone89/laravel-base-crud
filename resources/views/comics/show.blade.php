@@ -8,6 +8,12 @@
 
     <section id="comic-page">
 
+        @if (session('deleted'))
+            <div class="alert alert-success border  ">
+                {{ session('deleted') }}
+            </div>
+        @endif
+
         {{-- BARRA SFONDO BLU --}}
         <div class="blue-bg"></div>
 
@@ -153,10 +159,11 @@
 
 
                             {{-- BUTTON DELETE --}}
-                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST"
+                                data-name="{{ $comic->title }}">
                                 @csrf
                                 @method('DELETE')
-                                <button type="subimit" class="btn btn-danger">Cancella</button>
+                                <button type="submit" class="btn btn-danger delete-form">Cancella</button>
                             </form>
                         </div>
                     </div>
@@ -169,4 +176,34 @@
         </section>
 
     </section>
+@endsection
+
+@section('js')
+    <script>
+        // Reccupero tutti i parametri dal FORM
+        const deleteForms = document.querySelectorAll('.delete-form');
+
+        deleteForms.forEach(form => {
+            // azione eseguita al click della cancellazione del comic
+            form.addEventListener('submit', (event) => {
+
+                // Il metodo preventDefault() annulla l'evento se è annullabile, il che significa che 
+                // l'azione predefinita che appartiene all'evento non si verificherà.
+                // Ad esempio, può essere utile quando:
+                // Facendo clic su un pulsante "Invia", si impedisce l'invio di un modulo.
+                // Cliccando su un link, si impedisce che il link segua l'URL
+                event.preventDefault();
+
+                // PRENDO L'attributo {{ $comic->title }}"
+                const comicTitle = form.getAttribute('data-name');
+
+                //Allert di conferma
+                const hasConfirmed = confirm(`Sei sicuro di volere eliminare il comic ${comicTitle}`)
+
+                // Se schiaccio si mi elimina il comic
+                if (hasConfirmed) form.submit();
+            });
+
+        });
+    </script>
 @endsection
