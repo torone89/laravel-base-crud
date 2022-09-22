@@ -35,7 +35,8 @@
                         value="{{ $comic->sale_date }}">
                 </div>
                 <div class="col-12 p-2">
-                    <textarea rows='5' class="form-control" placeholder="Description" name="description"></textarea>
+                    <textarea rows='5' class="form-control" placeholder="Description" name="description"
+                        value="{{ $comic->description }}"></textarea>
                 </div>
 
                 <div class="d-flex justify-content-between align-itmes-center">

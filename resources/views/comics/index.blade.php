@@ -11,7 +11,7 @@
             </div>
 
             <div class="d-flex justify-content-end">
-                <div class="mt-5">
+                <div class="    mt-5">
                     <a href="{{ route('comics.create') }}" class="btn btn-success">Crea Comic</a>
                 </div>
             </div>

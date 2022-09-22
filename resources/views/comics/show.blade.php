@@ -149,11 +149,10 @@
 
                             {{-- BUTTON EDIT --}}
 
-                            <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">Edita</a>
+                            <a class="btn btn-warning mx-2" href="{{ route('comics.edit', $comic->id) }}">Edita</a>
 
 
                             {{-- BUTTON DELETE --}}
-
                             <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
